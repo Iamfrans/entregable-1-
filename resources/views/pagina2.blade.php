@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Producto</title>
     <link rel="stylesheet" href="..\resources\css\welcome.css" />
+	
 </head>
 <body>
     <!-- Menú de navegación -->
