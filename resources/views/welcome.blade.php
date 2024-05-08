@@ -7,6 +7,8 @@
     <title>Tienda de Zapatillas Urbanas</title>
     <!-- Agregar Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Estilos personalizados -->
     <style>
         body {
@@ -29,75 +31,78 @@
         .navbar-nav .nav-link:hover {
             color: #ffc107;
         }
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-        }
-        .jumbotron {
-            background-image: url('https://source.unsplash.com/1600x900/?sneakers,promotion'); /* Imagen de fondo */
-            background-size: cover;
-            color: #ffffff; /* Color del texto */
-            text-align: center;
-        }
-        .jumbotron h1, .jumbotron p {
-            color: #ffffff; /* Color del texto */
+        .navbar-toggler-icon {
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <!-- Menú de navegación -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">Zapatillas Urbanas</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars" style="color: #fff;"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Catálogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Carrusel de zapatillas -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000"> <!-- Cambio aquí -->
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1587855049254-351f4e55fe2a?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Promoción 1">
-        </div>
-        <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1641745900309-75ceed0153e1?q=80&w=2028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Promoción 2">
-        </div>
-        <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1617906641165-c7d0117c18ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Promoción 3">
+   <!-- Menú de navegación -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- Cambié el texto "Tienda" por un icono de casa para representar la página principal -->
+        <a class="navbar-brand" href="http://localhost/entregable-1-/public/">
+            <i class="fas fa-home"></i> Inicio
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/entregable-1-/public/pagina2">Hombre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/entregable-1-/public/pagina3">Mujer</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/entregable-1-/public/pagina4">Acceder</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/entregable-1-/public/pagina4">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/entregable-1-/public/pagina5">
+                        <i class="fas fa-shopping-cart"></i> Carrito
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-    </a>
-</div>
+</nav>
 
 
-    
+
+    <!-- Carrusel de zapatillas -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1587855049254-351f4e55fe2a?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Promoción 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1641745900309-75ceed0153e1?q=80&w=2028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Promoción 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1617906641165-c7d0117c18ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Promoción 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
     <!-- Contenido de la página -->
     <div class="jumbotron">
         <h1 class="display-4">¡Bienvenido a tu Tienda de Zapatillas Favorita!</h1>
