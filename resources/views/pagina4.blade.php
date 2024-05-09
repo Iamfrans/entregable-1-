@@ -1,129 +1,77 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tienda de Zapatillas Urbanas</title>
-    <!-- Agregar Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Estilos personalizados -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa; /* Color de fondo */
-            color: #343a40; /* Color del texto */
-        }
-        .navbar {
-            background-color: #000;
-            border-bottom: 1px solid #1a1a1a;
-        }
-        .navbar-brand {
-            color: #fff;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        .navbar-nav .nav-link {
-            color: #fff;
-            padding: 0.5rem 1rem;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #ffc107;
-        }
-        .navbar-toggler-icon {
-            color: #fff;
-        }
-        .navbar-brand img {
-            height: 30px;
-            width: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zapatillas Urbanas - Login/Register</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="..\resources\css\pagina4.css">
 </head>
 <body>
-    <!-- Menú de navegación -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <!-- Cambié el texto "Tienda" por un icono de casa para representar la página principal -->
-        <a class="navbar-brand" href="http://localhost/entregable-1-/public/">
-            <i class="fas fa-home"></i> Inicio
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/entregable-1-/public/pagina2">Hombre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/entregable-1-/public/pagina3">Mujer</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/entregable-1-/public/pagina4">Acceder</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/entregable-1-/public/pagina4">Registrarse</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/entregable-1-/public/pagina5">
-                        <i class="fas fa-shopping-cart"></i> Carrito
-                    </a>
-                </li>
-            </ul>
+  <div class="background-image"></div>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header bg-dark text-white">
+            <h3 class="text-center">Inicia Sesión</h3>
+          </div>
+          <div class="card-body">
+            <form id="login-form">
+              <div class="form-group">
+                <label for="login-email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="login-email" required>
+              </div>
+              <div class="form-group">
+                <label for="login-password">Contraseña</label>
+                <div class="input-group">
+                  <input type="password" class="form-control" id="login-password" required>
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary toggle-password" type="button">
+                      <i class="fa fa-eye-slash"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+            </form>
+          </div>
         </div>
-    </div>
-</nav>
-
-    <!-- Contenido de la página -->
-    <div class="container mt-4">
-        <h1 class="mb-4">Nuestros Productos</h1>
-        <div class="row">
-            <!-- Producto 1 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Producto 1">
-                    <div class="product-card-body">
-                        <h5 class="product-title">Zapatillas Urbanas Blancas</h5>
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel nunc at arcu posuere posuere.</p>
-                        <p class="product-price">$99.99</p>
-                        <button class="btn btn-buy">Comprar</button>
-                    </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="card">
+          <div class="card-header bg-dark text-white">
+            <h3 class="text-center">Registro</h3>
+          </div>
+          <div class="card-body">
+            <form id="register-form">
+              <div class="form-group">
+                <label for="register-email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="register-email" required>
+              </div>
+              <div class="form-group">
+                <label for="register-password">Contraseña</label>
+                <div class="input-group">
+                  <input type="password" class="form-control" id="register-password" required>
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary toggle-password" type="button">
+                      <i class="fa fa-eye-slash"></i>
+                    </button>
+                  </div>
                 </div>
-            </div>
-            <!-- Producto 2 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Producto 2">
-                    <div class="product-card-body">
-                        <h5 class="product-title">Zapatillas Urbanas Negras</h5>
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel nunc at arcu posuere posuere.</p>
-                        <p class="product-price">$109.99</p>
-                        <button class="btn btn-buy">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Producto 3 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Producto 3">
-                    <div class="product-card-body">
-                        <h5 class="product-title">Zapatillas Urbanas Rojas</h5>
-                        <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel nunc at arcu posuere posuere.</p>
-                        <p class="product-price">$119.99</p>
-                        <button class="btn btn-buy">Comprar</button>
-                    </div>
-                </div>
-            </div>
+              </div>
+              <button type="submit" class="btn btn-success btn-block">Registrarse</button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Agregar Bootstrap JS (opcional, solo si necesitas componentes de JavaScript) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script src="..\resources\js\pagina4.js"></script>
 </body>
 </html>

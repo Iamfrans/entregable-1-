@@ -107,7 +107,7 @@
     <div class="jumbotron">
         <h1 class="display-4">¡Bienvenido a tu Tienda de Zapatillas Favorita!</h1>
         <p class="lead">Descubre las últimas promociones, modelos exclusivos y más.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Explorar</a>
+        <a class="btn btn-primary btn-lg" href="http://localhost/entregable-1-/public/pagina2" role="button">Explorar</a>
     </div>
 
     <!-- Agregar Bootstrap JS (opcional, solo si necesitas componentes de JavaScript) -->
